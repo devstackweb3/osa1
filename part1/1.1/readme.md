@@ -12,7 +12,7 @@ Currently, two official plugins are available:
 Familiarize with props data management between child & parent components. 
 
 
-# Refactoring code in 3 Components : Header | Content | Total
+## Refactoring code in 3 Components : Header | Content | Total
 
 All data still resides in the App component, which passes the necessary data to each component using props. Header takes care of rendering the name of the course, Content renders the parts and their number of exercises and Total renders the total number of exercises.
 
