@@ -63,7 +63,7 @@ Once the targeted object, in this context this is one of the three items of the 
 const partsArray = parts[0].listParts
 ```
 
-## 2.6 Step Solution | 
+## 2.6 Step Solution | Overview Content REACT Component
 
 ```jsx
 const Content = (props) => {
@@ -72,18 +72,7 @@ const partsArray = parts[0].listParts
 ...console.logs...
 return (
     <div>
-      <Part
-        partTitle={partsArray[0].exTitle}
-        partExC={partsArray[0].exCompleted}
-      />
-      <Part
-        partTitle={partsArray[1].exTitle}
-        partExC={partsArray[1].exCompleted}
-      />
-      <Part
-        partTitle={partsArray[2].exTitle}
-        partExC={partsArray[2].exCompleted}
-      />
+      
     </div>
   )
 }
@@ -110,4 +99,33 @@ const Part = ({ partTitle, partExC }) => {
 }
 
 export default Part
+```
+
+## 4th Step Solution | 
+
+```jsx
+import Part from '../../../part1/src/components/part'
+const Content = (props) => {
+const parts = [props]
+const partsArray = parts[0].listParts
+...console.logs...
+return (
+    <div>
+      <Part
+        partTitle={partsArray[0].exTitle}
+        partExC={partsArray[0].exCompleted}
+      />
+      <Part
+        partTitle={partsArray[1].exTitle}
+        partExC={partsArray[1].exCompleted}
+      />
+      <Part
+        partTitle={partsArray[2].exTitle}
+        partExC={partsArray[2].exCompleted}
+      />
+    </div>
+  )
+}
+
+export default Content
 ```
