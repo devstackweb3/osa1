@@ -19,3 +19,25 @@ Refactor the Content component so that it does not render any names of parts or 
 I started with searching the common method used as map() or for each() but with implementing those functions I stated that it was a too optimised version for what was asked by exercice. 
 After 4-6 hours struggling with property interpretation through parameter entrancy of REACT component called Content, due to the fact the component was interpreted by the methods as an object instead of an array, I finally found the solution of value variables rendering and only after, saw the misinterpretation logical architecture involved. 
 I then unstructured my code to return to the basis of interpretation & correct it accordingly. 
+
+# MAP() | DOESN’T APPLY TO OBJECT VARIABLES (REACT PROPS)
+
+```jsx
+TypeError : **parts.map** is not a function 
+```
+
+The method .map() doesn't recognize the referenced variable, as a variable of array type. Recognition of variable of type Object. 
+
+```jsx
+const Part = (**parts**) => { //paramètre de propriété "**parts**" interprété comme objet à la place d'un tableau 
+  const dataArrayParts = **parts.map**((part) => (
+    <li key={part.id}>
+      <span>{part.exTitle}</span> <span>{part.exCompleted}</span>
+    </li>
+  ))
+return (
+<></>
+)
+```
+
+## How to access the variable property through a property declared as a parameter entrancy in a REACT component ?
