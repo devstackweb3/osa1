@@ -55,3 +55,13 @@ console.log(parts[0])
 console.log(parts[0].listParts)
 ```
 If no renders available, this means there is a problem with the parameter entrancy declared. Adapt it as an object "{""}"
+
+
+## 2.5 Partial Solution | General root path variable attribution
+Once the targeted object, in this context this is one of the three items of the array, is returned through console.log, register a new variable reference as root path item. 
+```jsx
+const partsArray = parts[0].listParts
+```
+
+## 3d Partial Solution | 
+
