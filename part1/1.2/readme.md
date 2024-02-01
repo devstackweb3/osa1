@@ -101,7 +101,7 @@ const Part = ({ partTitle, partExC }) => {
 export default Part
 ```
 
-## 4th Step Solution | 
+## 4th Step Solution | Add the <Part /> sub-children components in Content component
 
 ```jsx
 import Part from '../../../part1/src/components/part'
