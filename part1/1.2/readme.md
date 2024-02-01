@@ -13,3 +13,7 @@ All data still resides in the App component, which passes the necessary data to 
 # Refactoring code in 3 Identical Children Components stated inside "Content"
 Each <Part /> much renders respectively the exercice title and number of exercices made.
 Refactor the Content component so that it does not render any names of parts or their number of exercises by itself. Instead, it only renders three Part components of which each renders the name and number of exercises of one part.
+
+# Exercice Progress 
+
+I started with searching the common method used as map() or for each() but with implementing those functions I stated that it was a too optimised version for what was asked by exercice. I then unstructured my code to return to the basis of interpretation. 
