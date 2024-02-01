@@ -76,6 +76,8 @@ return (
     </div>
   )
 }
+
+export default Content
 ```
 
 ## 3d Step Solution | Create the sub-child component named Part 
