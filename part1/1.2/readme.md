@@ -16,4 +16,4 @@ Refactor the Content component so that it does not render any names of parts or 
 
 # Exercice Progress 
 
-I started with searching the common method used as map() or for each() but with implementing those functions I stated that it was a too optimised version for what was asked by exercice. I then unstructured my code to return to the basis of interpretation. 
+I started with searching the common method used as map() or for each() but with implementing those functions I stated that it was a too optimised version for what was asked by exercice. After 4-6 hours struggling with property interpretation through parameter entrancy of REACT component called Content, due to the fact the component was interpreted by the methods as an object instead of an array, I finally found the solution of value variables rendering and only after, saw the misinterpretation logical architecture involved. I then unstructured my code to return to the basis of interpretation. 
