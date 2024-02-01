@@ -41,3 +41,15 @@ return (
 ```
 
 ## How to access the variable property through a property declared as a parameter entrancy in a REACT component ?
+
+### 1st Partial Solution | Object -> Array Type attribution : 
+Change the variable type interpretation. 
+```jsx
+const parts = [props]
+```
+### 2nd Partial Solution | Test access to variable with console.log() : 
+```jsx
+console.log(parts)
+console.log(parts[0])
+console.log(parts[0].listParts)
+```
