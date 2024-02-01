@@ -48,9 +48,10 @@ Change the variable type interpretation.
 const parts = [props]
 ```
 ### 2nd Partial Solution | Test access to variable with console.log() : 
-If no renders available, this means there is a problem with the parameter entrancy declared. Adapt it as an object "{""}"
+Objective is to have an overview of gradation accessibility of data stated inside the array of properties. Realizing a successive of different tests with console.log permits to have the necessary global overview. 
 ```jsx
 console.log(parts)
 console.log(parts[0])
 console.log(parts[0].listParts)
 ```
+If no renders available, this means there is a problem with the parameter entrancy declared. Adapt it as an object "{""}"
