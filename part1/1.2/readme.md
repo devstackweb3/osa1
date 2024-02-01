@@ -29,6 +29,7 @@ TypeError : **parts.map** is not a function
 The method .map() doesn't recognize the referenced variable, as a variable of array type. Recognition of variable of type Object. 
 
 ```jsx
+//Part.jsx
 const Part = (**parts**) => { //paramètre de propriété "**parts**" interprété comme objet à la place d'un tableau 
   const dataArrayParts = **parts.map**((part) => (
     <li key={part.id}>
@@ -45,12 +46,14 @@ return (
 ### 1st Step Solution | Object -> Array Type attribution : 
 Change the variable type interpretation. 
 ```jsx
+//Content.jsx
 const parts = [props]
 ```
 
 ### 2nd Step Solution | Test access to variable with console.log() : 
 Objective is to have an overview of gradation accessibility of data stated inside the array of properties. Realizing a successive of different tests with console.log permits to have the necessary global overview. 
 ```jsx
+//Content.jsx
 console.log(parts)
 console.log(parts[0])
 console.log(parts[0].listParts)
@@ -60,12 +63,14 @@ If no renders available, this means there is a problem with the parameter entran
 ## 2.5 Step Solution | General root path variable attribution
 Once the targeted object, in this context this is one of the three items of the array, is returned through console.log, register a new variable reference as root path item. 
 ```jsx
+//Content.jsx
 const partsArray = parts[0].listParts
 ```
 
 ## 2.6 Step Solution | Overview Content REACT Component
 
 ```jsx
+//Content.jsx
 const Content = (props) => {
 const parts = [props]
 const partsArray = parts[0].listParts
@@ -84,6 +89,7 @@ export default Content
 The initial configuration, the parameters properties were initiated normally without curly braces. Through a series of console.log tests, I have discovered the access to properties from the parent component weren't possible. 
 
 ```jsx
+//Part.jsx
 const Part = ({ partTitle, partExC }) => {
   //const partsArray = Object.values(parts)
   //const partsArray = [parts]
@@ -106,6 +112,7 @@ export default Part
 ## 4th Step Solution | Add the <Part /> sub-children components in Content component
 
 ```jsx
+//Content.jsx
 import Part from '../../../part1/src/components/part'
 const Content = (props) => {
 const parts = [props]
