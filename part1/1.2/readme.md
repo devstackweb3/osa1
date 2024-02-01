@@ -10,7 +10,7 @@ Currently, two official plugins are available:
 # Refactoring code in 3 Components : Header | Content | Total
 All data still resides in the App component, which passes the necessary data to each component using props. Header takes care of rendering the name of the course, Content no much renders the parts and their number of exercises delegated to <Part /> children components inside itself, and Total renders the total number of exercises.
 
-# Refactoring code in 3 Identical Components stated inside "Content" : <Part />
-
+# Refactoring code in 3 Identical Children Components stated inside "Content"
+# <Part />
 Each <Part /> much renders respectively the exercice title and number of exercices made.
 Refactor the Content component so that it does not render any names of parts or their number of exercises by itself. Instead, it only renders three Part components of which each renders the name and number of exercises of one part.
