@@ -48,6 +48,7 @@ Change the variable type interpretation.
 const parts = [props]
 ```
 ### 2nd Partial Solution | Test access to variable with console.log() : 
+If no renders available, this means there is a problem with the parameter entrancy declared. Adapt it as an object "{""}"
 ```jsx
 console.log(parts)
 console.log(parts[0])
