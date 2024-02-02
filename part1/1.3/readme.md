@@ -1,7 +1,7 @@
 
 ## Exercice Objective : 
 Modify the variable definitions of the App component as follows and also refactor the application so that it still works:
-
+```jsx
 const App = () => {
   const course = 'Half Stack application development'
   const part1 = {
@@ -23,3 +23,4 @@ const App = () => {
     </div>
   )
 }
+```
