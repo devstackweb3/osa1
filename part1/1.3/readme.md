@@ -24,3 +24,6 @@ const App = () => {
   )
 }
 ```
+
+## Exercice Process : 
+Realised in less than 45 minutes following the first statement understandings of data interactions between props. I encountered a little confusion on the props entrancy parameter declared inside the content REACT componant that I initially divided into 3 prop before seeing with console.log() tests 1 prop was responsible of rethrieving the 3 seperated objects declared previously in the app.jsx file. 
