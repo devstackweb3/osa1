@@ -40,6 +40,4 @@ const App = () => {
 ```
 
 ## Exercise Proceed : 
-Exercise completed within 10 minutes of practice. With the help of console.log() I orientated myself on the statement path of data listenning with the new object created and simply changed the hierarchy accessibility of those components : <Header course={course.name} />
-      <Content partsList={course.parts} />
-      <Total partsList={course.parts} />
+Exercise completed within 10 minutes of practice. With the help of console.log() I orientated myself on the statement path of data listenning with the new object created and simply changed the hierarchy accessibility of those components : Header course={course.name} | Content partsList={course.parts} | Total partsList={course.parts}
