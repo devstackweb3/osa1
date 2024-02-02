@@ -26,3 +26,6 @@ const App = () => {
   )
 }
 ```
+## Exercice Progress : 
+The adaptability of app.jsx linking the parameter properties to the content REACT Component hadn't encountered any specific understanding problems. The interpretation of logic linking parameters has however been misunderstood once I passed through the sub-child component between content.jsx and part.jsx. After 15 minutes working on it, I realized the linking parameter process was made through the renamed process inside the < Part partName={...} />. The partName was initially declared as partsArray bringing me quickly confusion interpretation. 
+After correcting it, the data were displayed correctly. 
