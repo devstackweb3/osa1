@@ -48,3 +48,34 @@ So far all of our applications have been such that their appearance remains the 
 
 #### Page Re-rendering Method
 
+#### Forcing Method 
+The refresh() function called 3 times, re-renders the app 3 times. Each time the value is updated to its new state.
+
+```jsx
+const App = (props) => {
+  const {counter} = props
+  return (
+    <div>{counter}</div>
+  )
+}
+
+export default App
+```
+
+```jsx
+//main.jsx
+let counter = 1
+
+const refresh = () => {
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    <App counter={counter} />
+  )
+}
+
+refresh()
+counter += 1
+refresh()
+counter += 1
+refresh()
+```
+
