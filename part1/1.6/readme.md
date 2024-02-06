@@ -38,5 +38,7 @@ export default App
 ```
 
 ## Storage System (cache VS server) : 
-How to reach a functionning system page only caching data & restarting its data statement cumulation once page re-rendered ?
+### How to reach a functionning system page only caching data & restarting its data statement cumulation once page re-rendered ?
+
+#### How data cache storage works in REACT ? 
 
