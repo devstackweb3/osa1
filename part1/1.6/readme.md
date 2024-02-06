@@ -49,7 +49,7 @@ So far all of our applications have been such that their appearance remains the 
 #### Page Re-rendering Method
 
 #### Forcing Method 
-The refresh() function called 3 times, re-renders the app 3 times. Each time the value is updated to its new state.
+The refresh() function called 3 times, re-renders the app 3 times. Each time the value is updated to its new counting state.
 
 ```jsx
 const App = (props) => {
