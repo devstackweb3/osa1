@@ -38,9 +38,11 @@ export default App
 ```
 
 ## Storage System (cache VS server) : 
-### How to reach a functionning system page only caching data & restarting its data statement cumulation once page re-rendered ?
-
+### How to reach a functionning system page only caching data & restarting its data statement cumulation once page re-rendered not taking into consideration previous history statement ?
+Reversed Engineering | Destructuring Questions Process
 #### How data cache storage works in REACT ? 
+
+#### How rendering web pages works in REACT ? 
 
 #### Page Rendering Method
 So far all of our applications have been such that their appearance remains the same after the initial rendering. In the REACT world, it means telling a component to update and redraw itself, even if nothing has really changed in the data (state/props) it uses.
