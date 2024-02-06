@@ -45,7 +45,8 @@ Reversed Engineering | Destructuring Questions Process
 #### How rendering web pages works in REACT ? 
 
 ### Page Rendering Method
-So far all of our applications have been such that their appearance remains the same after the initial rendering. In the REACT world, it means telling a component to update and redraw itself, even if nothing has really changed in the data (state/props) it uses.
+So far all of our applications have been such that their appearance remains the same after the initial rendering. In the REACT world, it means telling a component to update and redraw itself, even if nothing has really changed in the data (state/props) it uses. 
+**rendering process :** Represents the ability to update the WEB Page statement overview.
 ![REACT Rendering](https://github.com/devstackweb3/osa1/assets/118926098/a2cf7678-98d6-4a8c-8fbe-95c614dcaac4)
 
 ### Page Re-rendering Method
