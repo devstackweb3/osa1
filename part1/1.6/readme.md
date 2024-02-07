@@ -59,3 +59,4 @@ The re-rendering process is triggered by events occuring in data statement chang
 Examples : 
 click event | socket connexions | API calls | useState useRef methods | listenings
 
+Additional Source : https://medium.com/simform-engineering/react-re-rendering-exploring-what-why-and-how-d180d5305892
