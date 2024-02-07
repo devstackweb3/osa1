@@ -38,19 +38,20 @@ export default App
 ```
 
 ## Storage System (cache VS server) : 
-### How to reach a functionning system page only caching data & restarting its data statement cumulation once page re-rendered not taking into consideration previous history statement ?
+### How to reach a functionning system page only caching data & restarting its data statement cumulation once page re-rendered ?
 Reversed Engineering | Destructuring Questions Process
 #### How data cache storage works in REACT ? 
 
 #### How rendering web pages works in REACT ? 
 
 ### Page Rendering Method
-So far all of our applications have been such that their appearance remains the same after the initial rendering. In the REACT world, it means telling a component to update and redraw itself, even if nothing has really changed in the data (state/props) it uses. 
+So far all of our applications have been such that their appearance remains the same after the initial rendering. In the REACT world, it means telling a component to update and redraw itself, even if nothing has really changed in the data (state/props) it uses. Its the intial method of charging components app to display application overview on screen interfaces. 
 
 **rendering process :** Represents the ability to update the WEB Page statement overview according to data updates.
 ![REACT Rendering](https://github.com/devstackweb3/osa1/assets/118926098/a2cf7678-98d6-4a8c-8fbe-95c614dcaac4)
 
 ### Page Re-rendering Method
+Can happen due to user interactions (button click, changes in text inputs values, API Calls, socket connexions, listeners).
 
 #### Forcing Method 
 The refresh() function called 3 times, re-renders the app 3 times. Each time the value is updated to its new **counter** state. However the re-renderings processes are made so fast, at a human scale, it isn't seen. No explicit delay of timing seperation are involved, causing instant re-renders actions followed at milliseconds level. 
