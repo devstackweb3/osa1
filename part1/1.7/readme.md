@@ -68,7 +68,7 @@ return (...some code...)
 
 After realizing that I could simplify it directly in the button's event listener, I adapted it to the same format as the 1st function averageStatsClicks(). 
 
-### How to integrate function calls recording the state of clickable data? 
+### positiveStatsClicks() | How to integrate function calls recording the state of clickable data? 
 create a function that creates both : 
 - array input with input value (string | number)  
 	useState([]) method | Create initial array state + updated state
