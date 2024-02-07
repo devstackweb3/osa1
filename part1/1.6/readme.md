@@ -1,92 +1,13 @@
-## Exercise Objective : 
-Like most companies, the student restaurant of the University of Helsinki Unicafe collects feedback from its customers. Your task is to implement a web application for collecting customer feedback. There are only three options for feedback: good, neutral, and bad.
+# React + Vite
 
-The application must display the total number of collected feedback for each category. Your final application could look like this:
-![image](https://github.com/devstackweb3/osa1/assets/118926098/4e3c63e9-2ac3-4307-a16c-37c10f4af382)
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Note that your application needs to work only during a single browser session. Once you refresh the page, the collected feedback is allowed to disappear.
+Currently, two official plugins are available:
 
-It is advisable to use the same structure that is used in the material and previous exercise. File main.jsx is as follows:
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-```jsx
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+# Refactoring code in 3 Components : Header | Content | Total
 
-import App from './App'
-
-ReactDOM.createRoot(document.getElementById('root')).render(<App />)
-```
-
-You can use the code below as a starting point for the App.jsx file:
-```jsx
-import { useState } from 'react'
-
-const App = () => {
-  // save clicks of each button to its own state
-  const [good, setGood] = useState(0)
-  const [neutral, setNeutral] = useState(0)
-  const [bad, setBad] = useState(0)
-
-  return (
-    <div>
-      code here
-    </div>
-  )
-}
-
-export default App
-```
-
-## Storage System (cache VS server) : 
-### How to reach a functionning system page only caching data & restarting its data statement cumulation once page re-rendered ?
-Reversed Engineering | Destructuring Questions Process
-#### How data cache storage works in REACT ? 
-
-#### How rendering web pages works in REACT ? 
-
-### Page Rendering Method
-So far all of our applications have been such that their appearance remains the same after the initial rendering. In the REACT world, it means telling a component to update and redraw itself, even if nothing has really changed in the data (state/props) it uses. Its the intial method of charging components app to display application overview on screen interfaces. 
-
-**rendering process :** Represents the ability to update the WEB Page statement overview according to data updates.
-![REACT Rendering](https://github.com/devstackweb3/osa1/assets/118926098/a2cf7678-98d6-4a8c-8fbe-95c614dcaac4)
-
-### Page Re-rendering Method
-Can happen due to user interactions with Virtual DOM (UI Rendering Part).
-
-#### Examples : 
-button click | inputs values changes | API Calls | socket connexions | listeners
-
-#### Usestate Method : 
-The re-rendering method takes place each time the setCounter function is called, causing a change of state in the counter value. 
-
-#### Forcing Method 
-The refresh() function called 3 times, re-renders the app 3 times. Each time the value is updated to its new **counter** state. However the re-renderings processes are made so fast, at a human scale, it isn't seen. No explicit delay of timing seperation are involved, causing instant re-renders actions followed at milliseconds level. 
-
-```jsx
-const App = (props) => {
-  const {counter} = props
-  return (
-    <div>{counter}</div>
-  )
-}
-
-export default App
-```
-
-```jsx
-//main.jsx
-let counter = 1
-
-const refresh = () => {
-  ReactDOM.createRoot(document.getElementById('root')).render(
-    <App counter={counter} />
-  )
-}
-
-refresh()
-counter += 1
-refresh()
-counter += 1
-refresh()
-```
+All data still resides in the App component, which passes the necessary data to each component using props. Header takes care of rendering the name of the course, Content renders the parts and their number of exercises and Total renders the total number of exercises.
 
