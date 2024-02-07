@@ -56,7 +56,7 @@ Can happen due to user interactions with Virtual DOM (UI Rendering Part).
 #### Examples : 
 button click | inputs values changes | API Calls | socket connexions | listeners
 
-##### Usestate Method : 
+#### Usestate Method : 
 The re-rendering method takes place each time the setCounter function is called, causing a change of state in the counter value. 
 
 #### Forcing Method 
