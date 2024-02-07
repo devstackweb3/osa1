@@ -15,6 +15,8 @@ Expand your application so that it shows more statistics about the gathered feed
 # Exercise Process : 
 In the 2nd function responsible for counting the number of positive clicks, I took a completely different approach, applying a **for loop** through the index of the allClicks array and transforming each index variable into ASCII values in order to implement a condition stipulating that if an item variable value was other than 49 assigned to the number 1, then a console.log was run, stipulating that no accounting was performed. If other, applied accounting not from the button itself assigned to the value "good" but by calling the same function: setNewPosClicks(positiveClicks.concat(1)) in other. In the meantime, I had to adapt the array variables to string format and then make the ASCII transformation method work. 
 
+ASCII Value Acquisition Method : https://javascript.plainenglish.io/javascript-program-to-find-ascii-value-of-character-5db419fccd1a
+
 Overview of direction development engaged at the start : 
 ```jsx
 const App = () => {
