@@ -51,7 +51,13 @@ So far all of our applications have been such that their appearance remains the 
 ![REACT Rendering](https://github.com/devstackweb3/osa1/assets/118926098/a2cf7678-98d6-4a8c-8fbe-95c614dcaac4)
 
 ### Page Re-rendering Method
-Can happen due to user interactions (button click, changes in text inputs values, API Calls, socket connexions, listeners).
+Can happen due to user interactions with Virtual DOM (UI Rendering Part).
+
+#### Examples : 
+button click | inputs values changes | API Calls | socket connexions | listeners
+
+##### Usestate Method : 
+The re-rendering method takes place each time the setCounter function is called, causing a change of state in the counter value. 
 
 #### Forcing Method 
 The refresh() function called 3 times, re-renders the app 3 times. Each time the value is updated to its new **counter** state. However the re-renderings processes are made so fast, at a human scale, it isn't seen. No explicit delay of timing seperation are involved, causing instant re-renders actions followed at milliseconds level. 
