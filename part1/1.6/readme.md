@@ -43,3 +43,19 @@ const App = () => {
 
 export default App
 ```
+
+# Exercise Progress 
+After 2 days of reading part b, part c and beginning of part d, I have understood the fundamentals of REACT rendering & re-rendering. At the start of exercise, I haven't stated the reason why the data triggering changes were stored only during unique browser session use. I initially assumed that the usestate method would record the state of change of any data items beyond a single browser session. It isn't the case. I over-focused my attention on the reading process instead of starting the practice side, wondering about finding documentation detailing the state functioning of data cache storage process through useState() method.  
+
+## Rendering Method
+Represents the initial rendering UI overview to the REAL DOM displaying components overview architecture and visibility. 
+
+![REACT Rendering](https://github.com/devstackweb3/osa1/assets/118926098/e0796158-d685-4e96-ba19-947515d6eb6f)
+
+
+## Re-Rendering Method
+The re-rendering process is triggered by events occuring in data statement changes amongst REACT components. 
+
+Examples : 
+click event | socket connexions | API calls | useState useRef methods | listenings
+
