@@ -36,3 +36,13 @@ Find out how to generate random numbers in JavaScript, eg. via a search engine o
 
 Your finished application could look something like this:
 ![image](https://github.com/devstackweb3/osa1/assets/118926098/338ccf06-8968-4447-bb24-4709f8ca2c03)
+
+# Exercise Process : 
+I have been confronted to a famous problem of re-rendering too much times. The infinite re-rendering in the app.jsx file was caused by the **onClickevent handler** in the <button>` element. 
+
+Instead of passing the handleClick function as a callback, you are calling the function immediately and passing its return value (undefined) to the Click event handler. This causes the randomNumGenerator function to be called on every render, updating the selected state and triggering another re-render, creating an infinite loop.
+
+To fix the issue, change the onClick event handler to pass the handleClick function without calling it:
+```jsx
+<button onClick={handleClick}>next anecdote</button>
+```
