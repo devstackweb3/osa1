@@ -1,10 +1,9 @@
-info 
-
 # Exercise Objective : 
 Let's continue refactoring the application. Extract the following two components:
 
-Button Handles the functionality of each feedback submission button.
-StatisticLine for displaying a single statistic, e.g. the average score.
+**Button** *Handles* the functionality of each feedback submission button.
+
+**StatisticLine** for displaying a single statistic, e.g. the average score.
 To be clear: the StatisticLine component always displays a single statistic, meaning that the application uses multiple components for rendering all of the statistics:
 
 ```jsx
