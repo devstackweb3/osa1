@@ -51,7 +51,7 @@ I firstly have created a function dedicated to generate randomly new numbers ins
 ```jsx
 Math.random() * anecdotes.length
 ```
-
+math.random : https://stackoverflow.com/questions/65710678/javascript-math-floor-and-math-random-question
 
 ## Problem Encountered : 
 I have been confronted to a famous problem of re-rendering too much times. The infinite re-rendering in the app.jsx file was caused by the **onClickevent handler** in the <button>` element. 
