@@ -23,3 +23,12 @@ const copy = [...points]
 copy[2] += 1
 ```
 Using an array might be the simpler choice in this case. Searching the Internet will provide you with lots of hints on how to create a zero-filled array of the desired length.
+
+# Exercise Process : 
+1) create a zero-filled array of the desired length.
+
+What is a zero-filled array ? 
+
+Why using a zero-filled array is interesting ? 
+
+How is it working ? 
