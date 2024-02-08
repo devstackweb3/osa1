@@ -47,6 +47,13 @@ Your finished application could look something like this:
 ![image](https://github.com/devstackweb3/osa1/assets/118926098/338ccf06-8968-4447-bb24-4709f8ca2c03)
 
 # Exercise Process : 
+I firstly have created a function dedicated to generate randomly new numbers inside the table of values. Multiplying the random() method by the length of the array allows you to specify the prender of random variables in the range up to the maximum variable of the existing index. 
+```jsx
+Math.random() * anecdotes.length
+```
+
+
+## Problem Encountered : 
 I have been confronted to a famous problem of re-rendering too much times. The infinite re-rendering in the app.jsx file was caused by the **onClickevent handler** in the <button>` element. 
 
 Instead of passing the handleClick function as a callback, you are calling the function immediately and passing its return value (undefined) to the Click event handler. This causes the randomNumGenerator function to be called on every render, updating the selected state and triggering another re-render, creating an infinite loop.
