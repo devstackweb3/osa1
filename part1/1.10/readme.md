@@ -23,10 +23,10 @@ const Statistics = (props) => {
 The application's state should still be kept in the root App component.
 
 # Exercise Process : 
-## Refactoring Button Sub-Children Components : 
+## Refactoring Button in Sub-Children Components : 
+I'm encountering a CSS formatting problem. Having started with tailwindcss, I realized that in reality the library was simply not imported, not taking into account my attempts to modify the state of the UI. Alternatively, assigning handleClick functions to dedicated reference points and taking them over as declared input properties in each REACT sub-child component, known under the <Button /> model, works well. 
 
-
-## Refactoring StatisticLine Sub-Children Components : 
+## Refactoring StatisticLine in Sub-Children Components : 
 When I started refactoring, I didn't anticipate the architectural organization resulting from the input values (properties) perceived by the child subcomponent <StatisticLine />. 
 I decided to declare the 3 properties in each <StatisticLine /> component. 
 
