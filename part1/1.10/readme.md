@@ -21,3 +21,13 @@ const Statistics = (props) => {
 }
 ```
 The application's state should still be kept in the root App component.
+
+# Exercise Process : 
+## Refactoring Button Sub-Children Components : 
+
+
+## Refactoring StatisticLine Sub-Children Components : 
+When I started refactoring, I didn't anticipate the architectural organization resulting from the input values (properties) perceived by the child subcomponent <StatisticLine />. 
+I decided to declare the 3 properties in each <StatisticLine /> component. 
+
+Having realized that duplicate values were being generated, I corrected the organization of the value interpretation so that it was always a global input value perceived in the <StatisticLine /> component and that each type property was interpreted in the parent <Statistics/> component.
