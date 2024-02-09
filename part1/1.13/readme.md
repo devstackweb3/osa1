@@ -28,7 +28,9 @@ Using an array might be the simpler choice in this case. Searching the Internet 
 1) create a zero-filled array of the desired length.
 
 What is a zero-filled array ? 
+A zero-filled array is an array whose value at each index is zero.
 
 Why using a zero-filled array is interesting ? 
+
 
 How is it working ? 
