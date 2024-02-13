@@ -28,9 +28,20 @@ Using an array might be the simpler choice in this case. Searching the Internet 
 1) create a zero-filled array of the desired length.
 
 What is a zero-filled array ? 
-A zero-filled array is an array whose value at each index is zero.
+A zero-filled array is an array whose value at each index is zero. 
+Setting up default value stored in indexes at start as number consideration helps to increment (sum) new voting counts.
 
 Why using a zero-filled array is interesting ? 
+No conflicts encountered between initial array of string variable stated and new values as number incrementation. 
+Better understanding of logic involvement between each logic.  
 
+### Creation of the copied array counting votes
+Establishing the length of the array in the first parentheses. Adding the default value at start of every index of the array, of 0 with the "fill" method. 
+```jsx
+const copyAnecdotes = Array(8).fill(0)
+```
 
-How is it working ? 
+### Encountered the "Undefined" return value statement in handleVoteClick function 
+This error occured due to the fact no new variable reference was established, causing a delay of listenning from the console.log() listenner method. 
+The value listenned wasn't able to be updated by the previous increment in time. The console.log() wasn't able to recognize the value of return. 
+
