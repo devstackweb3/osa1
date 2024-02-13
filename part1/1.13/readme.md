@@ -42,7 +42,7 @@ const copyAnecdotes = Array(8).fill(0)
 ```
 
  ### Issue 1 | How do you sum an external variable value to an internal stored value in an array(currentIndex) ?
-Taking the exercise example for acquired, I firstly have integrated the "+= 1" operation to the copyAnecdotes[selected] target index. But I stated if a new array was necessary, so a new useState method has to be defined linked to this new copied array. This new useState method would be responsible of the real time state of values counted from handleVoteClick function. 
+Taking the exercise example for acquired, I firstly have integrated the "+= 1" operation to the copyAnecdotes[selected] target index. But I stated if a new array was necessary, so a new useState method has to be defined linked to this new copied array. This new useState method would be responsible of the real time state of values counted inside handleVoteClick function. 
 ```jsx
 const [vote, setVote] = useState(0)
 ```
