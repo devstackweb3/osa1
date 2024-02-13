@@ -41,9 +41,11 @@ Establishing the length of the array in the first parentheses. Adding the defaul
 const copyAnecdotes = Array(8).fill(0)
 ```
 
-### Encountered the "Undefined" return value statement in handleVoteClick function 
+### Issue 0.9 | Encountered the "Undefined" return value statement in handleVoteClick function 
 This error occured due to the fact no new variable reference was established, causing a delay of listenning from the console.log() listenner method. 
-The value listenned wasn't able to be updated by the previous increment in time. The console.log() wasn't able to recognize the value of return. 
+The value listenned wasn't able to be updated by the previous increment in time. The console.log() wasn't able to recognize the value of return.
+
+ ### Issue 1 | How do you sum an external variable value to an internal stored value in an array(currentIndex) ?
 
 ```jsx
 const handleVoteClick = () => {
