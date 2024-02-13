@@ -42,7 +42,11 @@ const copyAnecdotes = Array(8).fill(0)
 ```
 
  ### Issue 1 | How do you sum an external variable value to an internal stored value in an array(currentIndex) ?
-
+Taking the exercise example for acquired, I firstly have integrated the "+= 1" operation to the copyAnecdotes[selected] target index. But I stated if a new array was necessary, so a new useState method has to be defined linked to this new copied array. This new useState method would be responsible of the real time state of values counted from handleVoteClick function. 
+```jsx
+const [vote, setVote] = useState(0)
+```
+I have adapted then the copyAndecotes[vote]. But I was yet wondering how to apply rightly the incremental process of sum between external number value to an internal stored value of 0 by default. I found out by processing the sum between the 2 kind of variables before sum it to current indexed value.
 ```jsx
 const handleVoteClick = () => {
     const newVoteCount = (copyAnecdotes[vote] += vote + 1) //SOLVED 13.02.24 || Comment parvenir à additionner la valeur de type 1 dans l'index actuel ?
