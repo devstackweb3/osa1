@@ -45,3 +45,10 @@ const copyAnecdotes = Array(8).fill(0)
 This error occured due to the fact no new variable reference was established, causing a delay of listenning from the console.log() listenner method. 
 The value listenned wasn't able to be updated by the previous increment in time. The console.log() wasn't able to recognize the value of return. 
 
+```jsx
+const handleVoteClick = () => {
+    const newVoteCount = (copyAnecdotes[vote] += vote + 1) //SOLVED 13.02.24 || Comment parvenir à additionner la valeur de type 1 dans l'index actuel ?
+    setVote(newVoteCount) // retourne la valeur updatée de l'index actuel
+    console.log(newVoteCount)
+  }
+```
