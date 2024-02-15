@@ -73,4 +73,8 @@ const handleVoteClick = () => {
     ...
   }
 ```
+Instead it is necessary to initialize the new copied array directly in the useState method. 
 
+```jsx
+const [vote, setVote] = useState(Array.apply(null, new Array(anecdotes.length)).map(Number.prototype.valueOf,0))
+```
