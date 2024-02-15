@@ -46,7 +46,7 @@ Taking the exercise example for acquired, I firstly have integrated the "+= 1" o
 ```jsx
 const [vote, setVote] = useState(0)
 ```
-I have adapted then the copyAndecotes[vote]. But I was yet wondering how to apply rightly the incremental process of sum between external number value to an internal stored value of 0 by default. I found out by processing the sum between the 2 kind of variables before sum it to current indexed value.
+I have adapted then the copyAnecdotes[vote]. But I was yet wondering how to apply rightly the incremental process of sum between external number value to an internal stored value of 0 by default. I found out by processing the sum between the 2 kind of variables before sum it to current indexed value.
 ```jsx
 const handleVoteClick = () => {
     const newVoteCount = (copyAnecdotes[vote] += vote + 1) //SOLVED 13.02.24 || Comment parvenir à additionner la valeur de type 1 dans l'index actuel ?
@@ -60,3 +60,15 @@ This error occured due to the fact no new variable reference was established, ca
 The value listenned wasn't able to be updated by the previous increment in time. The console.log() wasn't able to recognize the value of return.
 
 To correct the issue, an intermediary reference variable was necessary to create between state change (vote -> setVote). 
+
+### Issue 1.2 | Problem of identifying state of index after 1st call handleVoteClick function
+The pre-configured useState(0) *method const [vote, setVote] = useState(0)* doesn't identify any reference index attribution linked to the copyAnecdotes array declaration. Conducting in an erasing process after each re-call of handleVoteClick function, the new reference variable named copyAnecdotes *const copyAnecdotes = Array(8).fill(0)* had no direct link with the useState() method.
+
+```jsx
+const copyAnecdotes = Array(8).fill(0)
+
+const handleVoteClick = () => {
+    ...
+  }
+```
+
