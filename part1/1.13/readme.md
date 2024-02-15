@@ -65,6 +65,8 @@ To correct the issue, an intermediary reference variable was necessary to create
 The pre-configured useState(0) *method const [vote, setVote] = useState(0)* doesn't identify any reference index attribution linked to the copyAnecdotes array declaration. Conducting in an erasing process after each re-call of handleVoteClick function, the new reference variable named copyAnecdotes *const copyAnecdotes = Array(8).fill(0)* had no direct link with the useState() method.
 
 ```jsx
+const [vote, setVote] = useState(0)
+
 const copyAnecdotes = Array(8).fill(0)
 
 const handleVoteClick = () => {
